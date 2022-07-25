@@ -1,0 +1,60 @@
+label {
+  display: block;
+  position: relative;
+}
+
+label:not(:first-child) {
+  margin-top: 20px;
+}
+
+input {
+  border: 1px solid hsl(246, 25%, 77%);
+  border-radius: 5px;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 600;
+  height: 56px;
+  padding-left: 30px;
+}
+
+input::placeholder {
+  font-size: 14px;
+  font-weight: 500;
+  /* padding-left: 26px; */
+}
+
+input:active,
+input:focus {
+  border: 1px solid hsl(249, 10%, 26%);
+  font-weight: 600;
+}
+
+label img {
+  position: absolute;
+  right: 25px;
+  top: 20%;
+  /* transform: translate(-50%, -50%); */
+}
+
+.errorBorder {
+  border: 1px solid hsl(0, 100%, 74%);
+}
+
+.errorMessage {
+  color: hsl(0, 100%, 74%);
+  font-size: 11px;
+  font-style: italic;
+  font-weight: 500;
+  margin-top: 10px;
+  text-align: right;
+}
+
+@media (max-width: 1150px) {
+  input {
+    padding-left: 20px;
+  }
+  label:not(:first-child) {
+    margin-top: 15px;
+  }
+}

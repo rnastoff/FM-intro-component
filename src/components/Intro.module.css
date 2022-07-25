@@ -1,0 +1,142 @@
+.left {
+  padding: 264px 0px 0px 164px;
+  width: 50%;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 0px 0 15px;
+  width: 50%;
+}
+
+/* LEFT COLUMN */
+.left h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.left p {
+  color: #fff;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+/* RIGHT COLUMN */
+.tryItFree {
+  background: hsl(248, 32%, 49%);
+  border-radius: 10px;
+  box-shadow: 0px 8px 0px #dc6666;
+  padding: 9px 20px;
+  text-align: center;
+  width: 540px;
+}
+h2 {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+form {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 8px 0px #d96568;
+  padding: 40px;
+  margin-top: 24px;
+  width: 540px;
+}
+
+/* BUTTON */
+button {
+  /* all: unset; */
+  background: hsl(154, 59%, 51%);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 4px 0px #34b87e;
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  padding: 18px 20px;
+  text-align: center;
+  width: 100%;
+}
+
+/* TERMS */
+.terms {
+  color: hsl(246, 25%, 77%);
+  font-size: 11px;
+  line-height: 20px;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.terms span {
+  color: hsl(0, 100%, 74%);
+  font-weight: 700;
+}
+
+/* MEDIA QUERY */
+@media (max-width: 1150px) {
+  .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .left h1 {
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .left p {
+    margin-top: 0;
+    text-align: center;
+    width: 95%;
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+  }
+
+  .tryItFree {
+    display: flex;
+    justify-content: center;
+    margin-top: 46px;
+    text-align: center;
+    padding: 5px 14px;
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 15px;
+    line-height: 26px;
+    text-align: center;
+    width: 60%;
+  }
+
+  form {
+    padding: 26px;
+    width: 100%;
+  }
+
+  .terms {
+    margin-top: 12px;
+  }
+}
