@@ -12,13 +12,11 @@ const useForm = (callback, validate) => {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = e => {
-    console.log(e.target)
     const { name, value } = e.target;
     setValues({
       ...values,
       [name]: value
     });
-    console.log("values: ", values);
   }
 
   const handleSubmit = (e) => {
